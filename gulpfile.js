@@ -20,10 +20,14 @@ var gulp       = require('gulp'),
 
 	options = {
 		inlineCss: {
-			applyStyleTags : true,
-			applyLinkTags  : true,
+			// <style></style> 태그 인라인 화 할 것인지 설정
+			applyStyleTags: true,
+			// <link></link> 태그 인라인 화 할 것인지 설정
+			applyLinkTags: true,
+			// <style></style> 태그 인라인 화, 한 후 지울지 설정
 			removeStyleTags: true,
-			removeLinkTags : true
+			// <link></link> 태그 인라인 화, 한 후 지울지 설정
+			removeLinkTags: false
 		},
 		remove: {
 			// 지우고자 하는 요소의 선택자를 입력
