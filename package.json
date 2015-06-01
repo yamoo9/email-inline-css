@@ -1,0 +1,25 @@
+{
+  "name": "email-inline-css",
+  "version": "0.0.1",
+  "description": "이메일 콘텐츠 제작을 손쉽게 도와주는 인라인 CSS 자동 처리 프로세스",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/yamoo9/email-inline-css"
+  },
+  "keywords": [
+    "email",
+    "inline",
+    "css",
+    "remove",
+    "attributes"
+  ],
+  "author": "yamoo9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamoo9/email-inline-css/issues"
+  },
+  "homepage": "https://github.com/yamoo9/email-inline-css",
+  "devDependencies": {
+    "gulp-cheerio": "^0.6.2"
+  }
+}
