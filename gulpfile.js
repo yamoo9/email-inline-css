@@ -51,13 +51,19 @@ gulp.task('watch', function() {
 gulp.task('email', function() {
 	return gulp.src(path.src)
 	.pipe( inlineCss(options.inlineCss) )
-	.pipe( cheerio(function ($, file) {
-		$(options.remove.el).each(function() {
-			var _el = $(this);
-			options.remove.attrs.forEach(function(item, index) {
-				_el.removeAttr(item);
-			});
-		})
+	.pipe( cheerio({
+		run: function ($, file) {
+			$(options.remove.el).each(function() {
+				var _el = $(this);
+				options.remove.attrs.forEach(function(item, index) {
+					_el.removeAttr(item);
+				});
+			})
+		},
+		parserOptions: {
+			// UTF-8 언어 인코딩 설정 부분 (한국어,일어,중국어 등)
+			decodeEntities: false
+		}
 	}) )
 	.pipe( gulp.dest(path.out) );
 });
