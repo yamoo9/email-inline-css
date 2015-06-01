@@ -8,10 +8,16 @@ $ gulp email # 단일 프로세스 처리
 $ gulp       # 지속적 관찰 업무 추가
 ```
 
----
+-
 
-### 이메일 클라이언트 CSS 지원 정보 확인
+### 이메일 클라이언트에서 지원하는 CSS 스타일 확인
+
 - [email-standards.org](http://www.email-standards.org/)
 - [The Ultimate Guide to CSS](https://www.campaignmonitor.com/css/)
 - [About HTML Email](http://kb.mailchimp.com/campaigns/ways-to-build/how-to-code-html-emails)
 - [처음 시작하는 이들을 위한 이메일 디자인 베스트 예제 & 리소스 20](http://cafe.naver.com/webstandardproject/345)
+
+---
+
+### 결론
+이메일 디자인을 위해서는 테이블 레이아웃 및 이미지 폰트(디자이너가 원하는 글꼴 사용시)를 사용해야만 합니다.
